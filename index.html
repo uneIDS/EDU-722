@@ -12,7 +12,17 @@
 <tw-story></tw-story>
 
 <tw-storydata name="EDU 722 Educational Application" startnode="1" creator="Twine" creator-version="2.3.9" ifid="AE5E88C5-FBBB-4D1C-8A36-C176FFAFAFC2" zoom="0.6" format="Harlowe" format-version="3.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
-  background-image: url("https://github.com/uneIDS/EDU-722/blob/main/media/paper-texture_Gk28vPcu.jpg?raw=true");
+ background-image: url("https://github.com/uneIDS/EDU-722/blob/main/media/ClassroomBackground.jpg?raw=true");
+  background-color: rgb(242, 242, 237);
+   background-repeat: no-repeat;
+  background-size: cover;
+background-attachment: fixed;
+    display: flex;
+  align-items: center;
+  padding-top: 1.5em;
+}
+tw-story[tags="pdfView"] {
+background-image: url("https://github.com/uneIDS/EDU-722/blob/main/media/paper-texture_Gk28vPcu.jpg?raw=true");
   background-color: rgb(242, 242, 237);
    background-repeat: no-repeat;
   background-size: cover;
@@ -24,14 +34,14 @@ background-attachment: fixed;
 tw-passage {
   color: #2B3856;
   font-family: "Arial";
-  margin-left: 5em; 
+  /*margin-left: 5em;*/
   padding: 1.5em;
-  background-color: rgb(242, 242, 237);
+  background-color: rgb(242, 242, 237, .6);
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-tw-sidebar {
+/*tw-sidebar {
   margin-right: 2.5em;
-  background-color: rgb(242, 242, 237);
+  background-color: rgb(242, 242, 237, .6);
   position: fixed;
     top: 0;
     left: 0;
@@ -40,7 +50,7 @@ tw-sidebar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: left;
   padding: 15px;
-}
+}*/
 
 </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Welcome" tags="" position="814.6666666666667,553.3333333333334" size="100,100">In your experience as an educator, you will always have choices surrounding how to approach students with exceptionalities. You will have the chance to make some of these choices in the upcoming scenario. Take your time and consider which choices would be to the best service of the student. 
 
@@ -161,10 +171,10 @@ Perhaps some of the accommodations you implemented weren&#39;t necessary, but at
 (set: $PConfidence to 10)
 (set: $specCount to 0)
 (set: $diffCount to 0)
-}</tw-passagedata><tw-passagedata pid="25" name="Sidebar" tags="footer" position="1181.6666666666665,368.33333333333337" size="100,100">(append: ?SideBar)[\
+}</tw-passagedata><tw-passagedata pid="25" name="Sidebar" tags="footer" position="1181.6666666666665,368.33333333333337" size="100,100">&lt;!--(append: ?SideBar)[\
 &lt;h1&gt;Put Title Here&lt;/h1&gt;
 subtitle
-]</tw-passagedata></tw-storydata>
+]--&gt;</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
